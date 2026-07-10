@@ -5,21 +5,21 @@
   <title>LibertFamily Studio</title>
   <style>
     body {
-      margin: 0;
+      margin:50px;
       font-family: Arial, sans-serif;
-      background: #0f172a;
+      background: #000715;
       color: #e5e5e5;
     }
 
     header {
       text-align: center;
-      padding: 60px 20px;
-      background: #1e2a44;
+      padding: 0;
+      background: #020816;
     }
 
     header img {
-      width: 120px;
-      margin-bottom: 20px;
+      width: 100%;
+      margin-bottom: 0;
     }
 
     h1 {
@@ -34,55 +34,105 @@
     }
 
     .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-    }
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; /* pour que ça passe à la ligne sur petit écran */
+}
 
     .card {
-      background: #1a2235;
-      padding: 20px;
-      margin: 20px 0;
-      border-radius: 10px;
-    }
+  flex: 1;
+  min-width: 250px; /* évite que les cartes deviennent trop étroites */
+  background: #1a2332;
+  border: 1px solid #e08a1e;
+  border-radius: 8px;
+  padding: 20px;
+  color: white;
+}
+
+.card h2 {
+  color: #e08a1e;
+  margin-top: 0;
+}
 
     ul {
       line-height: 1.8;
     }
 
-    .btn {
+   
+     .banderole {
+     position: relative;
+     width: 100%  ;
+     padding:0;
+     margin:0;
+     display: flex;
+     
+     justify-content: center;
+     align-items: flex-start ;
+     background: #070707;
+    }
+    .banderole-publicite {
+      width: 100%; /* tu peux augmenter si tu veux encore plus grand */
+      max-width: none;
+      height:200px;
+     
+   }
+     .btn {
+      position:absolute;
+      
       display: inline-block;
       padding: 12px 20px;
-      background: #f4a261;
-      color: #0f172a;
+      background: #34eb34;
+      color: #2a190f;
       text-decoration: none;
       border-radius: 8px;
       margin-top: 20px;
       font-weight: bold;
+    } 
+    .hero {
+     width: 100%  ;
+     padding:0;
+     margin:0;
+     display: flex;
+     
+     justify-content: center;
+     align-items: flex-start ;
+     background: #070707;
     }
 
-    footer {
+     .hero-logo {
+      width: 100%; /* tu peux augmenter si tu veux encore plus grand */
+      max-width: none;
+      height:500px;
+      display: block;
+     
+   }
+    .btn-invisible {
+    position: absolute;
+    left:61%;
+    top: 38%;
+    padding:20px 45px;
+    color:#ff9c2e;
+      width: clamp(40px, 15%, 200px);
+    height: clamp(15px, 30%, 25px);
+        text-decoration:none;
+     font-weight:bold;
+    border:2px solid #ff9c2e;
+    border-radius:12px;
+    background:rgba(10,10,20,.35);
+      transition:.3s; 
+  }
+  .btn-invisible:hover{
+    background:#ff9c2e;
+    color:#111;
+    box-shadow:0 0 20px #ff9c2e;
+}
+  footer {
       text-align: center;
       padding: 30px;
       font-size: 14px;
       color: #aaa;
     }
-     .hero {
-     height: 100vh;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     text-align: center;
-     background: #1e2a44;
-    }
-
-     .hero-logo {
-      width: 300px; /* tu peux augmenter si tu veux encore plus grand */
-      max-width: 80%;
-      margin-bottom: 20px;
-   }
-  
+     
   
   
   
@@ -91,27 +141,12 @@
 
 <body>
 
-<header class="dero">
+<header class="hero">
   <!-- Remplace par ton logo -->
-  <img src="Libertfamilystudio.png" alt="LibertFamily Studio" class="hero-logo">
-  <h1>LibertFamily Studio</h1>
-  <p>Equipe familiale de test QA pour jeux vidéo indépendants</p>
+  <img src="C:\Users\Robert\Downloads\LogoSite.png" alt="LibertFamily Studio" class="hero-logo">
+  
 </header>
-.hero {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background: #1e2a44;
-}
 
- .hero-logo {
-  width: 300px; /* tu peux augmenter si tu veux encore plus grand */
-  max-width: 80%;
-  margin-bottom: 20px;
-}
 <div class="container">
 
   <div class="card">
@@ -138,14 +173,15 @@
       Aider les développeurs indépendants à livrer des jeux plus stables, plus fun et sans bugs critiques.
     </p>
   </div>
+ </div>
+  <section class="banderole">
+      <img src="C:\Users\Robert\Downloads\banderole_fixed.png" alt="LibertFamily Studio" class="banderole-publicite">
+       <a href="mailto:info@libertfamilystudio.com" class="btn-invisible">Nous contacter</a>
+    
+    
 
-  <div class="card">
-    <h2>📩 Contact</h2>
-    <p>Vous développez un jeu ? Testons-le ensemble.</p>
-    <a class="btn" href="mailto:info@libertfamilystudio.com">Nous contacter</a>
-  </div>
+  </section>
 
-</div>
 
 <footer>
   © 2026 LibertFamily Studio — All rights reserved
