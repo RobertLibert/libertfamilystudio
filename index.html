@@ -5,7 +5,7 @@
   <title>LibertFamily Studio</title>
   <style>
     body {
-      margin:50px;
+      margin:20px;
       font-family: Arial, sans-serif;
       background: #000715;
       color: #e5e5e5;
@@ -14,7 +14,7 @@
     header {
       text-align: center;
       padding: 0;
-      background: #020816;
+      background: #fff;
     }
 
     header img {
@@ -106,6 +106,24 @@
       display: block;
      
    }
+    nav {
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+    padding: 15px 40px;
+}
+    
+  nav a:hover {
+    color: #f4a261;
+     transform: scale(1.15);
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition:  color 0.5s ease, transform 0.5s ease;
+  }
     .btn-invisible {
     position: absolute;
     left:61%;
@@ -140,7 +158,15 @@
 </head>
 
 <body>
-
+<nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#services">Nos Services</a>
+    <a href="#apropos">À Propos</a>
+    <a href="#projets">Nos Projets</a>
+    <a href="#contact">Contact</a>
+    
+  
+  </nav>
 <header class="hero">
   <!-- Remplace par ton logo -->
   <img src="LogoSite.png" alt="LibertFamily Studio" class="hero-logo">
