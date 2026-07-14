@@ -3,173 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <title>LibertFamily Studio</title>
-  <style>
-    body {
-      margin:20px;
-      font-family: Arial, sans-serif;
-      background: #000715;
-      color: #e5e5e5;
-    }
-
-    header {
-      text-align: center;
-      padding: 0;
-      background: #fff;
-    }
-
-    header img {
-      width: 100%;
-      margin-bottom: 0;
-    }
-
-    h1 {
-      margin: 0;
-      font-size: 40px;
-      color: #f4a261;
-    }
-
-    h2 {
-      color: #f4a261;
-      margin-top: 40px;
-    }
-
-    .container {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap; /* pour que ça passe à la ligne sur petit écran */
-}
-
-    .card {
-  flex: 1;
-  min-width: 250px; /* évite que les cartes deviennent trop étroites */
-  background: #1a2332;
-  border: 1px solid #e08a1e;
-  border-radius: 8px;
-  padding: 20px;
-  color: white;
-}
-
-.card h2 {
-  color: #e08a1e;
-  margin-top: 0;
-}
-
-    ul {
-      line-height: 1.8;
-    }
-
-   
-     .banderole {
-     position: relative;
-     width: 100%  ;
-     padding:0;
-     margin:0;
-     display: flex;
-     
-     justify-content: center;
-     align-items: flex-start ;
-     background: #070707;
-    }
-    .banderole-publicite {
-      width: 100%; /* tu peux augmenter si tu veux encore plus grand */
-      max-width: none;
-      height:200px;
-     
-   }
-     .btn {
-      position:absolute;
-      
-      display: inline-block;
-      padding: 12px 20px;
-      background: #34eb34;
-      color: #2a190f;
-      text-decoration: none;
-      border-radius: 8px;
-      margin-top: 20px;
-      font-weight: bold;
-    } 
-    .hero {
-     width: 100%  ;
-     padding:0;
-     margin:0;
-     display: flex;
-     
-     justify-content: center;
-     align-items: flex-start ;
-     background: #070707;
-    }
-
-     .hero-logo {
-      width: 100%; /* tu peux augmenter si tu veux encore plus grand */
-      max-width: none;
-      height:500px;
-      display: block;
-     
-   }
-    nav {
-    width: 90%;
-    display: flex;
-    justify-content: flex-end;
-    gap: 25px;
-    padding: 15px 40px;
-}
-    
-  nav a:hover {
-    color: #f4a261;
-     transform: scale(1.15);
-  }
-  nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition:  color 0.5s ease, transform 0.5s ease;
-  }
-    .btn-invisible {
-    position: absolute;
-    left:61%;
-    top: 38%;
-    padding:20px 45px;
-    color:#ff9c2e;
-      width: clamp(40px, 15%, 200px);
-    height: clamp(15px, 30%, 25px);
-        text-decoration:none;
-     font-weight:bold;
-    border:2px solid #ff9c2e;
-    border-radius:12px;
-    background:rgba(10,10,20,.35);
-      transition:.3s; 
-  }
-  .btn-invisible:hover{
-    background:#ff9c2e;
-    color:#111;
-    box-shadow:0 0 20px #ff9c2e;
-}
-  footer {
-      text-align: center;
-      padding: 30px;
-      font-size: 14px;
-      color: #aaa;
-    }
-     
-  
-  
-  
-  </style>
+  <link rel="stylesheet" href="css/global.css">
+ <link rel="stylesheet" href="css/accueil.css">
 </head>
-
 <body>
-<nav>
-    <a href="#accueil">Accueil</a>
-    <a href="#services">Nos Services</a>
-    <a href="#apropos">À Propos</a>
-    <a href="#projets">Nos Projets</a>
-    <a href="#contact">Contact</a>
+ <nav>
+    <a href="index.html">Accueil</a>
+    <a href="services.html">Nos Services</a>
+    <a href="apropos.html">À Propos</a>
+    <a href="projets.html">Nos Projets</a>
+    <a href="contact.html">Contact</a>
     
   
   </nav>
-<header class="hero">
+
+  <header class="hero">
   <!-- Remplace par ton logo -->
-  <img src="LogoSite.png" alt="LibertFamily Studio" class="hero-logo">
+  
+  <img src="images/LogoSite.png" alt="LibertFamily Studio" class="hero-logo">
   
 </header>
 
@@ -201,7 +52,7 @@
   </div>
  </div>
   <section class="banderole">
-      <img src="banderole_fixed.png" alt="LibertFamily Studio" class="banderole-publicite">
+      <img src="images/banderole_fixed.png" alt="LibertFamily Studio" class="banderole-publicite">
        <a href="mailto:info@libertfamilystudio.com" class="btn-invisible">Nous contacter</a>
     
     
