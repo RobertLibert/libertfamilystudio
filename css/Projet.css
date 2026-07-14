@@ -1,0 +1,82 @@
+
+    
+    h2 {
+      color: #f4a261;
+      margin-top: 40px;
+    }
+
+   .container2 {
+   position: relative;
+   display: flex;
+   gap: 20px;
+   min-width:1200px; /* pour que ça passe à la ligne sur petit écran */
+   margin: 50px auto; /* centrer le conteneur */
+   padding: 0 10px; /* ajouter un peu d'espace à gauche et à droite */
+  }  
+  .projet-logo {
+    width: 30%; /* je peux augmenter si je veux encore plus grand */
+    max-width: none;
+    height:100px;
+    justify-content: center; 
+    display: block;
+    margin: 0 auto; /* centrer l'image horizontalement */
+  }
+  .card2 {
+  flex: 1;
+  width: 1%;
+  border:1px solid #e08a1e;
+  border-radius: 10px;
+  padding: 20px;
+  color: white;
+}
+  .card h2 {
+  color: #e08a1e;
+  margin-top: 0;
+}  
+
+  .card2-image {
+  width: 100%; /* je peux augmenter si je veux encore plus grand */
+  max-width: none;
+  height:40%;
+  padding: 0;
+}       
+.btn-savoir{
+    margin-top:5%;
+    margin-left:35%;
+  
+    color:white;
+    
+    padding:10px 20px;
+    
+    height: auto;
+    
+    text-decoration:none;
+    font-weight:bold;
+    border:2px solid #ff9c2e;
+    border-radius:12px;
+    background: color white;
+    transition:.3s; 
+  }
+  
+  .btn-savoir:hover{
+    background:#ff9c2e;
+    color:#fff;
+    box-shadow:0 0 20px #ff9c2e;
+  }
+  .projects-header {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.projects-header img {
+    width: 280px;
+}
+
+.projects-header p {
+    color: white;
+    font-size: 16px;
+    max-width: 700px;
+    margin: 15px auto;
+    line-height: 1.5;
+}
+    

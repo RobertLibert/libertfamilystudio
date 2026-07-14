@@ -1,0 +1,195 @@
+/* ===== Général ===== */
+body {
+
+  font-family: Arial, sans-serif;
+  background: #010615;
+
+}
+
+header {
+  text-align: center;
+  padding: 20px 40px;
+  background: #fff;
+}
+
+header img {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+h1 {
+  margin: 0;
+  font-size: 40px;
+  color: #f4a261;
+}
+
+h2 {
+  color: #f4a261;
+  margin-top: 40px;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  /* pour que ça passe à la ligne sur petit écran */
+}
+
+.card {
+  flex: 1;
+  min-width: 250px;
+  /* évite que les cartes deviennent trop étroites */
+  background: #1a2332;
+  border: 1px solid #e08a1e;
+  border-radius: 8px;
+  padding: 20px;
+  color: white;
+}
+
+
+
+ul {
+  line-height: 1.8;
+}
+
+/* ===== banderole publicitaire ===== */
+.banderole {
+  position: relative;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+
+  justify-content: center;
+  align-items: flex-start;
+  background: #070707;
+}
+
+.banderole-publicite {
+  width: 100%;
+  /* je peux augmenter si je veux encore plus grand */
+  max-width: none;
+  height: 200px;
+
+}
+
+
+
+/* ===== logo ===== */
+
+
+
+
+.hero {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+
+  justify-content: center;
+  align-items: flex-start;
+  background: #070707;
+}
+
+.hero-logo {
+  width: 100%;
+  /* je peux augmenter si je veux encore plus grand */
+  max-width: none;
+  height: 500px;
+  display: block;
+
+}
+
+/* ===== Menu principal ===== */
+nav {
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 40px;
+  font-size: 24px;
+  color: white;
+  padding: 20px 40px;
+}
+
+nav a:hover {
+  color: #f4a261;
+  transform: scale(1.15);
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.5s ease, transform 0.5s ease;
+}
+
+/* ===== Menu sur banderole ===== */
+.nav-banderole {
+  background-color: #0a0508;
+  background-image:
+    linear-gradient(to right, rgba(60, 20, 10, 0.6), rgba(60, 20, 10, 0) 15%, rgba(10, 20, 50, 0) 60%, rgba(10, 20, 60, 0.6)),
+    url("../images/logopage4.png");
+  background-size: auto, auto 162px;
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  height: 162px;
+  box-sizing: border-box;
+  width: 100vw;
+  position: relative;
+  left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+}
+
+.nav-banderole a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.5s ease, transform 0.5s ease;
+}
+
+.nav-banderole {
+  align-items: flex-end;
+  background-size: contain;
+  background-position: center 25%;
+  background-repeat: no-repeat;
+  height: 162px;
+  justify-content: center;
+  color: white;
+  box-sizing: border-box;
+}
+
+.nav-banderole a:hover {
+  color: #f4a261;
+  transform: scale(1.15);
+}
+
+/* ===== bouton contact ===== */
+.btn-invisible {
+  position: absolute;
+  color: white;
+  left: 61%;
+  top: 38%;
+  padding: 20px 45px;
+  width: clamp(40px, 15%, 200px);
+  height: clamp(15px, 30%, 25px);
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid #ff9c2e;
+  border-radius: 12px;
+  background: color white;
+  transition: .3s;
+}
+
+.btn-invisible:hover {
+  background: #ff9c2e;
+  color: #fff;
+  box-shadow: 0 0 20px #ff9c2e;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 30px;
+  font-size: 14px;
+  color: #aaa;
+}
