@@ -286,3 +286,17 @@ nav a[aria-current="page"] {
     object-fit: cover;
   }
 }
+
+/* Bouton principal de la banderole d'accueil */
+.btn-invisible {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  min-width: 190px;
+  height: auto;
+  min-height: 52px;
+  padding: 12px 24px;
+  white-space: nowrap;
+  line-height: 1.2;
+}
