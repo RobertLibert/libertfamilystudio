@@ -244,3 +244,45 @@ nav a[aria-current="page"] {
     object-fit: cover;
   }
 }
+
+/* Bandeau visible des cinq projets */
+.project-strip {
+  width: 100%;
+  height: 162px;
+  overflow: hidden;
+  background: #0a0f18;
+}
+
+.project-strip img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.page-header {
+  background: transparent;
+}
+
+.nav-banderole {
+  height: auto;
+  min-height: 72px;
+  background-color: #080d18;
+  background-image: none;
+  align-items: center;
+}
+
+.page-header .button:not(.primary) {
+  background: #111a29;
+}
+
+@media (max-width: 800px) {
+  .project-strip {
+    height: 105px;
+  }
+
+  .project-strip img {
+    object-fit: cover;
+  }
+}
