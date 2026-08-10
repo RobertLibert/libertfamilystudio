@@ -200,3 +200,47 @@ body {
     padding-top: 45px;
   }
 }
+
+nav a[aria-current="page"] {
+  color: #f4a261;
+}
+
+@media (max-width: 800px) {
+  .hero-logo {
+    height: auto;
+  }
+
+  .banderole-publicite {
+    height: auto;
+    min-height: 150px;
+    object-fit: cover;
+  }
+
+  .btn-invisible {
+    left: auto;
+    top: auto;
+    right: 8%;
+    bottom: 18%;
+    width: auto;
+    height: auto;
+    padding: 10px 16px;
+  }
+
+  .container2 {
+    min-width: 0;
+    width: 100%;
+    padding: 0 16px;
+    flex-wrap: wrap;
+  }
+
+  .card2 {
+    flex: 1 1 280px;
+    width: auto;
+  }
+
+  .card2-image {
+    height: auto;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+  }
+}
