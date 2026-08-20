@@ -5,10 +5,11 @@
       margin-top: 40px;
     }
 
-   .container2 {
+  .container2 {
    position: relative;
    display: flex;
    gap: 20px;
+   max-width: 1500px;
    min-width:1200px; /* pour que ça passe à la ligne sur petit écran */
    margin: 50px auto; /* centrer le conteneur */
    padding: 0 10px; /* ajouter un peu d'espace à gauche et à droite */
@@ -41,8 +42,8 @@
   padding: 0;
 }       
 .btn-savoir{
-    margin-top:5%;
-    margin-left:35%;
+    display: inline-block;
+    margin-top: 5%;
   
     color:white;
     
@@ -56,6 +57,40 @@
     border-radius:12px;
     background: color white;
     transition:.3s; 
+  }
+
+  .qa-project-card {
+    background: linear-gradient(160deg, #1a2332 50%, #121827);
+  }
+
+  .qa-card-visual {
+    width: 100%;
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background:
+      radial-gradient(circle at 25% 15%, rgba(255, 156, 46, .28), transparent 28%),
+      linear-gradient(145deg, #111a29, #080d18);
+    border: 1px solid #3c4658;
+    border-radius: 7px;
+  }
+
+  .qa-card-visual span {
+    color: #ff9c2e;
+    font-size: 2.5rem;
+    font-weight: 900;
+  }
+
+  .qa-card-visual strong {
+    color: #fff;
+    letter-spacing: .16em;
+  }
+
+  .qa-badge {
+    background: #7a461a;
   }
   
   .btn-savoir:hover{
