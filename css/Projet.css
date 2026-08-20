@@ -87,32 +87,30 @@
 
   .qa-cover-link {
     position: relative;
-    min-height: 260px;
+    min-height: 0;
+    aspect-ratio: 1 / 1;
     display: block;
     overflow: hidden;
     color: #fff;
     text-decoration: none;
-    background: #080d18;
-  }
-
-  .qa-cover-link img {
-    width: 100%;
-    height: 260px;
-    display: block;
-    object-fit: cover;
-    transition: transform .35s ease, opacity .35s ease;
+    background:
+      radial-gradient(circle at 25% 15%, rgba(255, 156, 46, .3), transparent 30%),
+      radial-gradient(circle at 80% 85%, rgba(67, 98, 170, .24), transparent 35%),
+      linear-gradient(145deg, #111a29, #080d18);
   }
 
   .qa-cover-link::after {
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(2, 5, 12, .94), transparent 58%);
+    background:
+      linear-gradient(rgba(255, 255, 255, .025) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, .025) 1px, transparent 1px);
+    background-size: 24px 24px;
   }
 
-  .qa-cover-link:hover img {
-    transform: scale(1.035);
-    opacity: .88;
+  .qa-cover-link:hover {
+    box-shadow: inset 0 0 45px rgba(255, 156, 46, .12);
   }
 
   .qa-cover-label,
@@ -123,16 +121,23 @@
   }
 
   .qa-cover-label {
-    bottom: 52px;
+    top: 50%;
+    bottom: auto;
+    left: 50%;
+    transform: translate(-50%, -70%);
     color: #ff9c2e;
-    font-size: 2.7rem;
+    font-size: 4.5rem;
     font-weight: 900;
     line-height: 1;
+    text-shadow: 0 0 28px rgba(255, 156, 46, .25);
   }
 
   .qa-cover-link strong {
-    bottom: 22px;
+    left: 50%;
+    bottom: 54px;
+    transform: translateX(-50%);
     letter-spacing: .14em;
+    font-size: 1.15rem;
   }
 
   .qa-card-content {
