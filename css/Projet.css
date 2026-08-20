@@ -59,38 +59,92 @@
     transition:.3s; 
   }
 
-  .qa-project-card {
-    background: linear-gradient(160deg, #1a2332 50%, #121827);
-  }
-
-  .qa-card-visual {
-    width: 100%;
-    min-height: 180px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    background:
-      radial-gradient(circle at 25% 15%, rgba(255, 156, 46, .28), transparent 28%),
-      linear-gradient(145deg, #111a29, #080d18);
-    border: 1px solid #3c4658;
-    border-radius: 7px;
-  }
-
-  .qa-card-visual span {
-    color: #ff9c2e;
-    font-size: 2.5rem;
-    font-weight: 900;
-  }
-
-  .qa-card-visual strong {
-    color: #fff;
-    letter-spacing: .16em;
-  }
-
   .qa-badge {
     background: #7a461a;
+  }
+
+  .qa-page-header {
+    padding-bottom: 20px;
+  }
+
+  .qa-portfolio-grid {
+    width: min(1100px, calc(100% - 32px));
+    margin: 10px auto 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 360px));
+    gap: 28px;
+    justify-content: center;
+  }
+
+  .qa-portfolio-card {
+    overflow: hidden;
+    color: #fff;
+    background: linear-gradient(160deg, #1a2332 50%, #121827);
+    border: 1px solid #e08a1e;
+    border-radius: 12px;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, .22);
+  }
+
+  .qa-cover-link {
+    position: relative;
+    min-height: 260px;
+    display: block;
+    overflow: hidden;
+    color: #fff;
+    text-decoration: none;
+    background: #080d18;
+  }
+
+  .qa-cover-link img {
+    width: 100%;
+    height: 260px;
+    display: block;
+    object-fit: cover;
+    transition: transform .35s ease, opacity .35s ease;
+  }
+
+  .qa-cover-link::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(2, 5, 12, .94), transparent 58%);
+  }
+
+  .qa-cover-link:hover img {
+    transform: scale(1.035);
+    opacity: .88;
+  }
+
+  .qa-cover-label,
+  .qa-cover-link strong {
+    position: absolute;
+    z-index: 1;
+    left: 22px;
+  }
+
+  .qa-cover-label {
+    bottom: 52px;
+    color: #ff9c2e;
+    font-size: 2.7rem;
+    font-weight: 900;
+    line-height: 1;
+  }
+
+  .qa-cover-link strong {
+    bottom: 22px;
+    letter-spacing: .14em;
+  }
+
+  .qa-card-content {
+    padding: 24px;
+  }
+
+  .qa-card-content h2 {
+    margin-top: 18px;
+  }
+
+  .qa-card-content p {
+    line-height: 1.65;
   }
   
   .btn-savoir:hover{
