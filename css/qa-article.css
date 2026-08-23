@@ -181,6 +181,11 @@
     padding-top: 60px;
   }
 
+  .qa-hero h1 {
+    font-size: clamp(2.35rem, 12vw, 3rem);
+    letter-spacing: .02em;
+  }
+
   .approval-quotes {
     grid-template-columns: 1fr;
   }
