@@ -127,6 +127,83 @@ body {
   font-weight: bold;
 }
 
+.pricing-section {
+  padding: 30px 0 10px;
+}
+
+.pricing-header {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.pricing-header h2 {
+  margin-bottom: 8px;
+}
+
+.pricing-header p,
+.pricing-note {
+  color: #d7dde7;
+  line-height: 1.7;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  align-items: stretch;
+}
+
+.pricing-grid .price-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing-grid .price-card h3 {
+  margin: 0;
+  font-size: 1.35rem;
+}
+
+.pricing-grid .price-card.featured {
+  border-width: 2px;
+  box-shadow: 0 0 26px rgba(255, 156, 46, .2);
+}
+
+.price-badge {
+  align-self: flex-start;
+  margin: -44px 0 16px;
+  padding: 6px 12px;
+  color: #07101f !important;
+  background: #ff9c2e;
+  border-radius: 999px;
+  font-size: .82rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+
+.price-summary {
+  min-height: 3.4em;
+}
+
+.price-features {
+  flex: 1;
+  margin: 8px 0 24px;
+  padding-left: 20px;
+  color: #d7dde7;
+  line-height: 1.7;
+}
+
+.pricing-grid .button {
+  align-self: flex-start;
+}
+
+.pricing-note {
+  max-width: 780px;
+  margin: 24px auto 0;
+  text-align: center;
+}
+
 .cta-row {
   display: flex;
   flex-wrap: wrap;
@@ -190,6 +267,14 @@ body {
 
   .content-grid {
     grid-template-columns: 1fr;
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .price-summary {
+    min-height: auto;
   }
 
   .wide {
