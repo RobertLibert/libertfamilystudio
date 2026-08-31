@@ -52,6 +52,43 @@
   border-radius: 999px;
 }
 
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.button.secondary {
+  color: #f2f5f9;
+  background: transparent;
+  border: 1px solid #68758a;
+}
+
+.build-notice {
+  margin: 0 0 38px;
+  padding: clamp(24px, 5vw, 36px);
+  color: #e8edf4;
+  background: linear-gradient(135deg, rgba(125, 143, 202, .16), rgba(17, 26, 41, .96));
+  border: 1px solid #7d8fca;
+  border-left: 5px solid #ff9c2e;
+  border-radius: 14px;
+  line-height: 1.75;
+}
+
+.build-notice h2 {
+  margin-top: 0;
+}
+
+.report-link {
+  margin-top: 28px;
+  text-align: center;
+}
+
+.final-cta .button {
+  margin: 6px;
+}
+
 .qa-article {
   max-width: 980px;
   margin: 0 auto;
